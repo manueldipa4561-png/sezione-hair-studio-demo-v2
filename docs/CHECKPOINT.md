@@ -1,29 +1,39 @@
 # Current Checkpoint
 
 **Project:** SEZIONE Hair Studio Demo v2  
-**Checkpoint:** 2026-09-19 / bootstrap  
-**Main baseline:** ecffb6b263ce494b0cdfce2b93df285a51c2cd67  
-**Current gate:** G1 — Home research  
-**Frontend:** not started  
-**Build Pod:** paused  
-**Founder gate:** not reached
+**Checkpoint:** 2026-09-19 / founder visual gate A  
+**Main baseline:** 036b4296279471ee1a74732b4a5d0fea41c498fc  
+**Current gate:** GATE MANUEL A — Home visual approval  
+**Frontend:** NOT STARTED  
+**Build Pod:** PAUSED  
+**Founder gate:** REACHED
 
-## Gate 0 recovered
-Locked upstream direction for the Beauty / Hair project:
-- contemporary premium salon / hair studio;
-- editorial, sharp, cultured, image-led, appointment-ready;
-- strong brand identity and Web ↔ Social continuity;
-- services, stylists/team, work gallery, pricing logic, booking, first-visit guidance, local trust;
-- mobile-first;
-- reject generic beige/blush luxury, wellness clichés and fake before/after imagery.
+## Completed
+- 20-salon world-class benchmark review completed.
+- Typography locked for concept: Instrument Serif + Geist + IBM Plex Mono.
+- Palette direction retained: Paper / Ink base, controlled Oxide + Cobalt signals, Mist/Warm support.
+- Desktop Home high-fidelity concept completed in Figma.
+- Mobile Home high-fidelity concept completed in Figma.
+- Higgsfield concept assets generated and inserted:
+  - hero portrait;
+  - technical gesture;
+  - salon interior.
+- Higgsfield spend: 3 credits.
+- Reserved revision budget: 1 credit.
+- Figma text-overflow audit: 0 issues.
+- Figma orphan-node cleanup completed.
 
-## Gate 1 evidence started
-Research is being evaluated across:
-- customer booking/discovery behavior;
-- service/pricing clarity;
-- premium visual benchmarks;
-- website ↔ social coherence;
-- category clichés to avoid.
+## Figma
+https://www.figma.com/design/J5ezpVLsJVHddomgacMRNV
 
-## Next
-Finish the bounded Home research brief, then advance to G2 — Home visual concept.
+Frames:
+- Desktop: 1:2
+- Mobile: 1:3
+
+## Next action
+Wait for founder visual decision:
+- APPROVED → Implementation Contract → frontend.
+- REVISE → reopen Figma concept.
+- REJECT → rebuild from Gate 2.
+
+No frontend code may be created before approval.
