@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
@@ -37,4 +38,14 @@ test('mobile menu is keyboard operable', async ({ page }, testInfo) => {
   await expect(details).toHaveAttribute('open', '');
   await page.keyboard.press('Escape');
   await expect(details).not.toHaveAttribute('open', '');
+});
+
+
+test('capture visual QA artifact', async ({ page }, testInfo) => {
+  await page.goto('/');
+  await page.evaluate(async () => { await document.fonts.ready; });
+  await page.locator('img').last().scrollIntoViewIfNeeded();
+  await page.waitForTimeout(500);
+  fs.mkdirSync('visual-artifacts', { recursive: true });
+  await page.screenshot({ path: `visual-artifacts/home-${testInfo.project.name}.png`, fullPage: true });
 });
