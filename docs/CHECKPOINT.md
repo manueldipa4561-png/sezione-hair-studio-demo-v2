@@ -1,39 +1,71 @@
 # Current Checkpoint
 
 **Project:** SEZIONE Hair Studio Demo v2  
-**Checkpoint:** 2026-09-19 / founder visual gate A  
-**Main baseline:** 036b4296279471ee1a74732b4a5d0fea41c498fc  
-**Current gate:** GATE MANUEL A — Home visual approval  
-**Frontend:** NOT STARTED  
-**Build Pod:** PAUSED  
-**Founder gate:** REACHED
+**Checkpoint:** 2026-09-19 / Home implementation ready for founder Gate B  
+**Branch:** `build/home-approved`  
+**PR:** #1 — draft  
+**Current gate:** GATE MANUEL B — implementation approval  
+**Frontend:** Home implemented  
+**Other pages:** NOT STARTED
 
-## Completed
-- 20-salon world-class benchmark review completed.
-- Typography locked for concept: Instrument Serif + Geist + IBM Plex Mono.
-- Palette direction retained: Paper / Ink base, controlled Oxide + Cobalt signals, Mist/Warm support.
-- Desktop Home high-fidelity concept completed in Figma.
-- Mobile Home high-fidelity concept completed in Figma.
-- Higgsfield concept assets generated and inserted:
-  - hero portrait;
-  - technical gesture;
-  - salon interior.
-- Higgsfield spend: 3 credits.
-- Reserved revision budget: 1 credit.
-- Figma text-overflow audit: 0 issues.
-- Figma orphan-node cleanup completed.
+## Founder Gate A
+- APPROVED.
 
-## Figma
-https://www.figma.com/design/J5ezpVLsJVHddomgacMRNV
+## Gate 4 — Implementation Contract
+- COMPLETE: `docs/HOME-IMPLEMENTATION-CONTRACT.md`
 
-Frames:
-- Desktop: 1:2
-- Mobile: 1:3
+## Gate 5 — Frontend
+- COMPLETE.
+- Static HTML/CSS/JS, no framework runtime.
+- Desktop + mobile implementation.
+- Approved Higgsfield hero / technical gesture / interior imagery.
+- Accessible mobile menu and skip link.
+- No personal-data collection.
+
+## Gate 6 — Visual fidelity
+- PASS on automated full-page Chromium artifacts.
+- Desktop artifact: PASS, no blocking composition/crop/overflow issues.
+- Mobile artifact: PASS, no blocking composition/crop/overflow issues.
+- Screenshot capture is now automated in GitHub Actions.
+- Netlify screenshot independently confirmed the deployed page is the SEZIONE Home, not a placeholder.
+
+## Gate 7 — Technical QA
+- Static QA: PASS.
+- Playwright desktop: PASS.
+- Playwright mobile: PASS.
+- axe serious/critical: PASS after contrast correction.
+- Approved images: PASS.
+- Lighthouse category assertions: PASS.
+- CLS assertion: PASS.
+- Last observed LCP before hero preload: 2658.8688 ms (warning threshold 2500 ms).
+- Hero preload added for final verification.
+
+## Netlify
+- Project: `sezione-hair-studio-demo-v2`
+- Site ID: `7ac3c3a6-2e69-4b54-9a4b-ea4059c5c3c8`
+- URL: https://sezione-hair-studio-demo-v2.netlify.app
+- Current access policy: private / Netlify SSO.
+- Access controls were NOT weakened.
+- Current deploy content visually confirmed as SEZIONE Home.
+- GitHub source connection is not treated as verified because current deploy reports `commit_ref: null`.
+
+## Automation improvements added during Home
+1. Persistent manifest + checkpoint.
+2. Implementation Contract.
+3. Atomic feature branch + draft PR.
+4. Static structural QA.
+5. Playwright desktop/mobile.
+6. axe accessibility gate.
+7. Lighthouse CI.
+8. Automated visual QA screenshots uploaded as workflow artifact.
+9. Netlify project separated from v1.
+10. Human visual Gate A and implementation Gate B retained.
 
 ## Next action
-Wait for founder visual decision:
-- APPROVED → Implementation Contract → frontend.
-- REVISE → reopen Figma concept.
-- REJECT → rebuild from Gate 2.
+**Founder Gate B.**
 
-No frontend code may be created before approval.
+- APPROVED → mark Home PAGE LOCKED, prepare PR for merge, then begin next page from research/visual gate.
+- REVISE → reopen earliest incorrect implementation gate.
+- REJECT → stop downstream work and return to the appropriate visual/implementation gate.
+
+No other page may start before Home is locked.
