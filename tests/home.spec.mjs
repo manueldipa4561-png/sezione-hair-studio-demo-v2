@@ -1,0 +1,39 @@
+import { test, expect } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+
+test('home renders approved structure without horizontal overflow', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('h1')).toHaveCount(1);
+  await expect(page.locator('main > section')).toHaveCount(8);
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  expect(overflow).toBeLessThanOrEqual(1);
+});
+
+test('home has no serious or critical axe violations', async ({ page }) => {
+  await page.goto('/');
+  const results = await new AxeBuilder({ page }).analyze();
+  const blocking = results.violations.filter(v => ['serious','critical'].includes(v.impact));
+  expect(blocking).toEqual([]);
+});
+
+test('approved image assets load', async ({ page }) => {
+  await page.goto('/');
+  const images = page.locator('img');
+  await expect(images).toHaveCount(3);
+  for (let i = 0; i < 3; i++) {
+    await expect(images.nth(i)).toHaveJSProperty('complete', true);
+    expect(await images.nth(i).evaluate(img => img.naturalWidth)).toBeGreaterThan(100);
+  }
+});
+
+test('mobile menu is keyboard operable', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'mobile-chromium');
+  await page.goto('/');
+  const details = page.locator('.mobile-nav');
+  const summary = details.locator('summary');
+  await summary.focus();
+  await page.keyboard.press('Enter');
+  await expect(details).toHaveAttribute('open', '');
+  await page.keyboard.press('Escape');
+  await expect(details).not.toHaveAttribute('open', '');
+});
