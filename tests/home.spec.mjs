@@ -46,6 +46,11 @@ test('capture visual QA artifact', async ({ page }, testInfo) => {
   await page.evaluate(async () => { await document.fonts.ready; });
   await page.locator('img').last().scrollIntoViewIfNeeded();
   await page.waitForTimeout(500);
+  await page.evaluate(() => {
+    if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+    window.scrollTo(0, 0);
+  });
+  await page.waitForTimeout(100);
   fs.mkdirSync('visual-artifacts', { recursive: true });
   await page.screenshot({ path: `visual-artifacts/home-${testInfo.project.name}.png`, fullPage: true });
 });
