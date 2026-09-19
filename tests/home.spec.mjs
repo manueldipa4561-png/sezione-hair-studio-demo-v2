@@ -21,8 +21,9 @@ test('approved image assets load', async ({ page }) => {
   const images = page.locator('img');
   await expect(images).toHaveCount(3);
   for (let i = 0; i < 3; i++) {
-    await expect(images.nth(i)).toHaveJSProperty('complete', true);
-    expect(await images.nth(i).evaluate(img => img.naturalWidth)).toBeGreaterThan(100);
+    const image = images.nth(i);
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(() => image.evaluate(img => img.complete && img.naturalWidth > 100), { timeout: 10000 }).toBe(true);
   }
 });
 
