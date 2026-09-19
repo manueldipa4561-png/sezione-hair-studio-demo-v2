@@ -48,6 +48,8 @@ test('capture visual QA artifact', async ({ page }, testInfo) => {
   await page.waitForTimeout(500);
   await page.evaluate(() => {
     if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+    const skip = document.querySelector('.skip-link');
+    if (skip instanceof HTMLElement) skip.style.visibility = 'hidden';
     window.scrollTo(0, 0);
   });
   await page.waitForTimeout(100);
