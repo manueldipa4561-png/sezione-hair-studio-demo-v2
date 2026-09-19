@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "project": "SEZIONE Hair Studio Demo v2",
+  "repository": "manueldipa4561-png/sezione-hair-studio-demo-v2",
+  "methodology": "Punto Due Studio — Website Design & Production Team v2.0",
+  "business_rebranding_source": "Punto Due Studio — Agency Repositioning & Website 2.0 Leadership Team v1.0",
+  "current_gate": "GATE_1_HOME_RESEARCH",
+  "frontend_status": "BLOCKED_UNTIL_FOUNDER_VISUAL_APPROVAL",
+  "founder_gate_reached": false,
+  "active_pod": [
+    "Website Production Director / Execution Chief of Staff",
+    "Research & Reference Intelligence Lead",
+    "Digital Art Direction Translator",
+    "Project State & Context Controller",
+    "DesignOps & Workflow Automation Architect"
+  ],
+  "build_pod": "PAUSED",
+  "locked_requirements": [
+    "contemporary premium salon / hair studio",
+    "not generic beige luxury",
+    "editorial, sharp, cultured, image-led, appointment-ready",
+    "service architecture",
+    "stylist/team profiles",
+    "work/transformation gallery",
+    "pricing or pricing logic",
+    "booking",
+    "first-visit guidance",
+    "mobile-first experience",
+    "local discovery and trust",
+    "shared website/social source-world"
+  ],
+  "anti_principles": [
+    "generic beige/blush luxury",
+    "soft-serif + pink template language",
+    "wellness clichés",
+    "fake before/after imagery",
+    "overly feminine assumptions",
+    "code-first design",
+    "frontend reinterpretation of approved visual direction"
+  ],
+  "next_action": "Complete Home problem/visual/copy research and create the page concept before Figma.",
+  "next_founder_action": "Approve or reject the Home high-fidelity visual."
+}
