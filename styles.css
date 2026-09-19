@@ -61,7 +61,7 @@ h1,h2,.team-card h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400
 .first-copy{position:absolute;left:56.94%;top:126px;width:470px;font-size:20px;line-height:1.5}
 .first-steps{position:absolute;left:56.94%;top:376px;margin:0;padding:0;list-style:none}
 .first-steps li{height:68px;display:flex;align-items:flex-start;gap:30px;font-size:16px;font-weight:500}
-.first-steps span{color:var(--warm);font:500 10px/1 "IBM Plex Mono",monospace;margin-top:3px}
+.first-steps span{color:var(--paper);font:500 10px/1 "IBM Plex Mono",monospace;margin-top:3px}
 .first-btn{position:absolute;left:64px;top:530px;width:208px}
 .team{height:760px;position:relative;background:var(--paper)}
 .team>.eyebrow{position:absolute;left:64px;top:58px}
