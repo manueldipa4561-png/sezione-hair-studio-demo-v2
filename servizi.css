@@ -1,0 +1,670 @@
+/* SEZIONE / Services
+   GitHub-first implementation for Netlify visual review.
+   Extends shared Home tokens and navigation from styles.css. */
+
+.services-page h1,
+.services-page h2 {
+  font-family:"Instrument Serif",Georgia,serif;
+  font-weight:400;
+}
+
+.services-page .site-header {
+  color:var(--ink);
+}
+
+.services-page .desktop-nav a[aria-current="page"] {
+  color:var(--oxide);
+}
+
+.services-hero {
+  height:930px;
+  position:relative;
+  background:var(--paper);
+}
+
+.services-hero-eyebrow {
+  position:absolute;
+  left:64px;
+  top:146px;
+}
+
+.services-hero h1 {
+  position:absolute;
+  left:60px;
+  top:188px;
+  width:670px;
+  font-size:104px;
+  line-height:.885;
+}
+
+.services-hero-copy {
+  position:absolute;
+  left:66px;
+  top:510px;
+  width:560px;
+  font-size:20px;
+  line-height:1.45;
+}
+
+.services-help-cta {
+  position:absolute;
+  left:66px;
+  top:650px;
+  width:258px;
+  background:var(--cobalt);
+  color:var(--paper);
+}
+
+.services-hero-image {
+  position:absolute;
+  left:53.89%;
+  top:124px;
+  width:41.67%;
+  height:650px;
+  overflow:hidden;
+}
+
+.services-hero-image img {
+  object-position:center 48%;
+}
+
+.services-decision {
+  height:520px;
+  position:relative;
+  background:var(--ink);
+  color:var(--paper);
+}
+
+.services-decision>.eyebrow {
+  position:absolute;
+  left:64px;
+  top:54px;
+}
+
+.services-decision h2 {
+  position:absolute;
+  left:64px;
+  top:108px;
+  width:790px;
+  font-size:76px;
+  line-height:.92;
+}
+
+.services-decision-copy {
+  position:absolute;
+  left:67.36%;
+  top:126px;
+  width:350px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.services-decision-meta {
+  position:absolute;
+  left:67.36%;
+  top:334px;
+  color:var(--mist);
+  font:500 10px/1.2 "IBM Plex Mono",monospace;
+}
+
+.services-families {
+  height:820px;
+  position:relative;
+  background:var(--paper);
+}
+
+.services-families>.eyebrow {
+  position:absolute;
+  left:64px;
+  top:58px;
+}
+
+.services-families h2 {
+  position:absolute;
+  left:64px;
+  top:106px;
+  width:540px;
+  font-size:72px;
+  line-height:.94;
+}
+
+.families-list {
+  position:absolute;
+  left:45.14%;
+  right:64px;
+  top:230px;
+}
+
+.family-row {
+  min-height:132px;
+  padding:28px 0 24px;
+  border-top:1px solid rgba(14,14,13,.16);
+  display:grid;
+  grid-template-columns:70px 250px 1fr;
+  align-items:start;
+}
+
+.family-row:last-child {
+  border-bottom:1px solid rgba(14,14,13,.16);
+}
+
+.family-index {
+  padding-top:5px;
+  color:var(--cobalt);
+  font:500 10px/1 "IBM Plex Mono",monospace;
+}
+
+.family-row h3 {
+  padding-top:0;
+  font:500 22px/1.1 "Geist",sans-serif;
+}
+
+.family-row p {
+  max-width:360px;
+  font-size:15px;
+  line-height:1.6;
+}
+
+.services-first {
+  height:650px;
+  position:relative;
+  background:var(--oxide);
+  color:var(--paper);
+}
+
+.services-first>.eyebrow {
+  position:absolute;
+  left:64px;
+  top:58px;
+}
+
+.services-first h2 {
+  position:absolute;
+  left:64px;
+  top:112px;
+  width:650px;
+  font-size:72px;
+  line-height:.93;
+}
+
+.services-first-copy {
+  position:absolute;
+  left:56.94%;
+  top:126px;
+  width:470px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.services-first-steps {
+  position:absolute;
+  left:56.94%;
+  top:300px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.services-first-steps li {
+  min-height:64px;
+  display:flex;
+  gap:30px;
+  align-items:flex-start;
+  font-size:16px;
+  font-weight:500;
+}
+
+.services-first-steps span {
+  padding-top:3px;
+  color:var(--warm);
+  font:500 10px/1 "IBM Plex Mono",monospace;
+}
+
+.services-first-btn {
+  position:absolute;
+  left:64px;
+  top:538px;
+  width:240px;
+  font-size:10px;
+}
+
+.services-criteria {
+  height:820px;
+  position:relative;
+  background:var(--paper);
+}
+
+.services-criteria-image {
+  position:absolute;
+  left:64px;
+  top:60px;
+  width:45.14%;
+  height:700px;
+  overflow:hidden;
+}
+
+.services-criteria-image img {
+  object-position:center center;
+}
+
+.services-criteria-label {
+  position:absolute;
+  left:54.86%;
+  top:78px;
+}
+
+.services-criteria h2 {
+  position:absolute;
+  left:54.86%;
+  top:134px;
+  width:560px;
+  font-size:66px;
+  line-height:.94;
+}
+
+.services-criteria-copy {
+  position:absolute;
+  left:55%;
+  top:380px;
+  width:470px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.services-criteria-list {
+  position:absolute;
+  left:55%;
+  top:520px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.services-criteria-list li {
+  min-height:48px;
+  display:flex;
+  gap:28px;
+  font-size:15px;
+  font-weight:500;
+}
+
+.services-criteria-list span {
+  color:var(--cobalt);
+  font:500 10px/1.5 "IBM Plex Mono",monospace;
+}
+
+.services-criteria-note {
+  position:absolute;
+  left:55%;
+  bottom:88px;
+  width:500px;
+  color:var(--oxide);
+  font:500 9px/1.35 "IBM Plex Mono",monospace;
+}
+
+.services-final {
+  height:570px;
+  position:relative;
+  background:var(--cobalt);
+  color:var(--paper);
+}
+
+.services-final>.eyebrow {
+  position:absolute;
+  left:64px;
+  top:60px;
+}
+
+.services-final h2 {
+  position:absolute;
+  left:64px;
+  top:122px;
+  width:920px;
+  font-size:76px;
+  line-height:.92;
+}
+
+.services-final-copy {
+  position:absolute;
+  left:70.14%;
+  top:146px;
+  width:320px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.services-final-actions {
+  position:absolute;
+  left:70.14%;
+  top:330px;
+  display:flex;
+  gap:10px;
+}
+
+.services-final-primary,
+.services-final-secondary {
+  width:190px;
+  height:56px;
+}
+
+.services-final-primary {
+  background:var(--paper);
+  color:var(--ink);
+}
+
+.services-final-secondary {
+  border:1px solid var(--paper);
+  color:var(--paper);
+}
+
+.services-footer {
+  position:absolute;
+  left:64px;
+  right:64px;
+  bottom:44px;
+  display:flex;
+  gap:30px;
+  font:500 10px/1 "IBM Plex Mono",monospace;
+}
+
+.services-footer a[aria-current="page"] {
+  color:var(--warm);
+}
+
+@media (max-width:900px) {
+  .services-page .mobile-nav nav a[aria-current="page"] {
+    color:var(--warm);
+  }
+
+  .services-hero {
+    height:820px;
+  }
+
+  .services-hero-eyebrow {
+    left:20px;
+    top:86px;
+  }
+
+  .services-hero h1 {
+    left:20px;
+    top:126px;
+    width:350px;
+    font-size:54px;
+    line-height:.89;
+  }
+
+  .services-hero-image {
+    left:20px;
+    top:265px;
+    width:350px;
+    height:330px;
+  }
+
+  .services-hero-copy {
+    left:20px;
+    top:622px;
+    width:350px;
+    font-size:15px;
+    line-height:1.47;
+  }
+
+  .services-help-cta {
+    left:20px;
+    top:742px;
+    width:350px;
+    height:52px;
+    font-size:9px;
+  }
+
+  .services-decision {
+    height:470px;
+  }
+
+  .services-decision>.eyebrow {
+    left:20px;
+    top:38px;
+  }
+
+  .services-decision h2 {
+    left:20px;
+    top:82px;
+    width:350px;
+    font-size:46px;
+    line-height:.91;
+  }
+
+  .services-decision-copy {
+    left:20px;
+    top:252px;
+    width:345px;
+    font-size:15px;
+    line-height:1.47;
+  }
+
+  .services-decision-meta {
+    left:20px;
+    top:410px;
+    font-size:9px;
+  }
+
+  .services-families {
+    height:880px;
+  }
+
+  .services-families>.eyebrow {
+    left:20px;
+    top:38px;
+  }
+
+  .services-families h2 {
+    left:20px;
+    top:80px;
+    width:350px;
+    font-size:44px;
+    line-height:.95;
+  }
+
+  .families-list {
+    left:20px;
+    right:20px;
+    top:230px;
+  }
+
+  .family-row {
+    min-height:154px;
+    padding:22px 0 20px;
+    grid-template-columns:38px 1fr;
+    grid-template-rows:auto auto;
+    column-gap:0;
+  }
+
+  .family-index {
+    grid-row:1 / 3;
+    padding-top:3px;
+    font-size:9px;
+  }
+
+  .family-row h3 {
+    font-size:18px;
+  }
+
+  .family-row p {
+    grid-column:2;
+    padding-top:12px;
+    font-size:13px;
+    line-height:1.55;
+  }
+
+  .services-first {
+    height:650px;
+  }
+
+  .services-first>.eyebrow {
+    left:20px;
+    top:38px;
+  }
+
+  .services-first h2 {
+    left:20px;
+    top:82px;
+    width:350px;
+    font-size:46px;
+    line-height:.91;
+  }
+
+  .services-first-copy {
+    left:20px;
+    top:260px;
+    width:340px;
+    font-size:15px;
+    line-height:1.47;
+  }
+
+  .services-first-steps {
+    left:20px;
+    top:374px;
+  }
+
+  .services-first-steps li {
+    min-height:58px;
+    gap:18px;
+    font-size:13px;
+  }
+
+  .services-first-btn {
+    left:20px;
+    top:570px;
+    width:350px;
+    height:52px;
+    font-size:9px;
+  }
+
+  .services-criteria {
+    height:840px;
+  }
+
+  .services-criteria-image {
+    left:20px;
+    top:20px;
+    width:350px;
+    height:330px;
+  }
+
+  .services-criteria-label {
+    left:20px;
+    top:390px;
+  }
+
+  .services-criteria h2 {
+    left:20px;
+    top:430px;
+    width:350px;
+    font-size:44px;
+    line-height:.93;
+  }
+
+  .services-criteria-copy {
+    left:20px;
+    top:570px;
+    width:345px;
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .services-criteria-list {
+    left:20px;
+    top:682px;
+  }
+
+  .services-criteria-list li {
+    min-height:28px;
+    gap:16px;
+    font-size:12px;
+  }
+
+  .services-criteria-list span {
+    font-size:9px;
+  }
+
+  .services-criteria-note {
+    left:20px;
+    bottom:26px;
+    width:340px;
+    font-size:8px;
+  }
+
+  .services-final {
+    height:590px;
+  }
+
+  .services-final>.eyebrow {
+    left:20px;
+    top:38px;
+  }
+
+  .services-final h2 {
+    left:20px;
+    top:82px;
+    width:350px;
+    font-size:44px;
+    line-height:.91;
+  }
+
+  .services-final-copy {
+    left:20px;
+    top:310px;
+    width:340px;
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .services-final-actions {
+    left:20px;
+    top:410px;
+    display:grid;
+    gap:12px;
+  }
+
+  .services-final-primary,
+  .services-final-secondary {
+    width:350px;
+    height:52px;
+    font-size:9px;
+  }
+
+  .services-footer {
+    left:20px;
+    right:20px;
+    bottom:24px;
+    font-size:8px;
+  }
+
+  .services-footer a:not(:first-child) {
+    display:none;
+  }
+}
+
+@media (max-width:389px) {
+  .services-hero-image,
+  .services-help-cta,
+  .services-first-btn,
+  .services-criteria-image,
+  .services-final-primary,
+  .services-final-secondary {
+    width:calc(100vw - 40px);
+  }
+
+  .services-hero h1,
+  .services-hero-copy,
+  .services-decision h2,
+  .services-decision-copy,
+  .services-families h2,
+  .services-first h2,
+  .services-first-copy,
+  .services-criteria h2,
+  .services-criteria-copy,
+  .services-final h2,
+  .services-final-copy {
+    max-width:calc(100vw - 40px);
+  }
+}
