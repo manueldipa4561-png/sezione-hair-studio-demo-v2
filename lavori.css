@@ -1,0 +1,667 @@
+/* SEZIONE / Lavori
+   Portfolio page built GitHub-first for Netlify visual review. */
+
+.works-page h1,
+.works-page h2 {
+  font-family:"Instrument Serif",Georgia,serif;
+  font-weight:400;
+}
+
+.works-page .desktop-nav a[aria-current="page"] {
+  color:var(--cobalt);
+}
+
+.works-hero {
+  height:980px;
+  position:relative;
+  background:var(--paper);
+}
+
+.works-hero-eyebrow {
+  position:absolute;
+  left:64px;
+  top:146px;
+}
+
+.works-hero h1 {
+  position:absolute;
+  left:60px;
+  top:188px;
+  width:760px;
+  font-size:100px;
+  line-height:.89;
+}
+
+.works-hero-copy {
+  position:absolute;
+  left:66px;
+  top:526px;
+  width:540px;
+  font-size:19px;
+  line-height:1.5;
+}
+
+.works-hero-image {
+  position:absolute;
+  left:55.56%;
+  top:124px;
+  width:40%;
+  height:730px;
+  overflow:hidden;
+}
+
+.works-hero-image img {
+  object-position:center center;
+}
+
+.works-hero-meta {
+  position:absolute;
+  left:55.56%;
+  top:878px;
+  color:var(--oxide);
+  font:500 10px/1 "IBM Plex Mono",monospace;
+}
+
+.works-index {
+  height:620px;
+  position:relative;
+  background:var(--ink);
+  color:var(--paper);
+}
+
+.works-index>.eyebrow {
+  position:absolute;
+  left:64px;
+  top:58px;
+}
+
+.works-index h2 {
+  position:absolute;
+  left:64px;
+  top:112px;
+  width:760px;
+  font-size:68px;
+  line-height:.93;
+}
+
+.works-index-list {
+  position:absolute;
+  left:65.97%;
+  top:112px;
+  width:380px;
+}
+
+.works-index-list p {
+  min-height:92px;
+  border-top:1px solid rgba(244,240,232,.22);
+  display:grid;
+  grid-template-columns:46px 118px 1fr;
+  align-items:center;
+  font-size:13px;
+}
+
+.works-index-list p:last-child {
+  border-bottom:1px solid rgba(244,240,232,.22);
+}
+
+.works-index-list span {
+  color:var(--warm);
+  font:500 9px/1 "IBM Plex Mono",monospace;
+}
+
+.works-index-list strong {
+  font-size:14px;
+  font-weight:500;
+}
+
+.works-study {
+  height:900px;
+  position:relative;
+}
+
+.works-study-one {
+  background:var(--paper);
+}
+
+.works-study-one .works-study-image {
+  position:absolute;
+  left:64px;
+  top:64px;
+  width:50%;
+  height:770px;
+  overflow:hidden;
+}
+
+.works-study-one .works-study-image img {
+  object-position:center 45%;
+}
+
+.works-study-one .works-study-label {
+  position:absolute;
+  left:58.33%;
+  top:84px;
+}
+
+.works-study-one h2 {
+  position:absolute;
+  left:58.33%;
+  top:142px;
+  width:520px;
+  font-size:70px;
+  line-height:.93;
+}
+
+.works-study-one .works-study-copy {
+  position:absolute;
+  left:58.33%;
+  top:366px;
+  width:430px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.works-study-data {
+  position:absolute;
+  left:58.33%;
+  top:550px;
+  width:420px;
+  margin:0;
+}
+
+.works-study-data div {
+  min-height:70px;
+  border-top:1px solid rgba(14,14,13,.16);
+  display:grid;
+  grid-template-columns:126px 1fr;
+  align-items:center;
+}
+
+.works-study-data div:last-child {
+  border-bottom:1px solid rgba(14,14,13,.16);
+}
+
+.works-study-data dt {
+  color:var(--cobalt);
+  font:500 9px/1 "IBM Plex Mono",monospace;
+}
+
+.works-study-data dd {
+  margin:0;
+  font-size:14px;
+}
+
+.works-study-two {
+  background:var(--oxide);
+  color:var(--paper);
+}
+
+.works-study-two .works-study-label {
+  position:absolute;
+  left:64px;
+  top:70px;
+}
+
+.works-study-two h2 {
+  position:absolute;
+  left:64px;
+  top:126px;
+  width:600px;
+  font-size:76px;
+  line-height:.93;
+}
+
+.works-study-two .works-study-copy {
+  position:absolute;
+  left:64px;
+  top:360px;
+  width:500px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.works-study-two .works-study-image {
+  position:absolute;
+  left:53.47%;
+  top:64px;
+  width:42.08%;
+  height:770px;
+  overflow:hidden;
+}
+
+.works-study-image-crop img {
+  object-position:70% center;
+  transform:scale(1.35);
+}
+
+.works-study-note {
+  position:absolute;
+  left:64px;
+  bottom:68px;
+  width:420px;
+  color:var(--warm);
+  font:500 9px/1.35 "IBM Plex Mono",monospace;
+}
+
+.works-principles {
+  height:760px;
+  position:relative;
+  background:var(--paper);
+}
+
+.works-principles>.eyebrow {
+  position:absolute;
+  left:64px;
+  top:58px;
+  color:var(--oxide);
+}
+
+.works-principles h2 {
+  position:absolute;
+  left:64px;
+  top:108px;
+  width:780px;
+  font-size:74px;
+  line-height:.93;
+}
+
+.works-principles-grid {
+  position:absolute;
+  left:64px;
+  right:64px;
+  bottom:70px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.works-principles-grid article {
+  min-height:300px;
+  padding:28px;
+  border-top:1px solid rgba(14,14,13,.18);
+  background:rgba(199,204,214,.26);
+  position:relative;
+}
+
+.works-principles-grid article:nth-child(2) {
+  background:var(--ink);
+  color:var(--paper);
+}
+
+.works-principles-grid article:nth-child(3) {
+  background:var(--warm);
+}
+
+.works-principles-grid span {
+  color:var(--cobalt);
+  font:500 10px/1 "IBM Plex Mono",monospace;
+}
+
+.works-principles-grid article:nth-child(2) span {
+  color:var(--warm);
+}
+
+.works-principles-grid h3 {
+  margin-top:62px;
+  font-size:22px;
+  font-weight:500;
+}
+
+.works-principles-grid p {
+  position:absolute;
+  left:28px;
+  right:28px;
+  bottom:28px;
+  font-size:15px;
+  line-height:1.5;
+}
+
+.works-final {
+  height:590px;
+  position:relative;
+  background:var(--cobalt);
+  color:var(--paper);
+}
+
+.works-final>.eyebrow {
+  position:absolute;
+  left:64px;
+  top:58px;
+}
+
+.works-final h2 {
+  position:absolute;
+  left:64px;
+  top:120px;
+  width:880px;
+  font-size:76px;
+  line-height:.92;
+}
+
+.works-final-copy {
+  position:absolute;
+  left:70.14%;
+  top:145px;
+  width:320px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.works-final-actions {
+  position:absolute;
+  left:70.14%;
+  top:334px;
+  display:flex;
+  gap:10px;
+}
+
+.works-final-primary,
+.works-final-secondary {
+  width:190px;
+  height:56px;
+}
+
+.works-final-primary {
+  background:var(--paper);
+  color:var(--ink);
+}
+
+.works-final-secondary {
+  border:1px solid var(--paper);
+  color:var(--paper);
+}
+
+.works-footer {
+  position:absolute;
+  left:64px;
+  right:64px;
+  bottom:44px;
+  display:flex;
+  gap:30px;
+  font:500 10px/1 "IBM Plex Mono",monospace;
+}
+
+.works-footer a[aria-current="page"] {
+  color:var(--warm);
+}
+
+@media (max-width:900px) {
+  .works-page .mobile-nav nav a[aria-current="page"] {
+    color:var(--warm);
+  }
+
+  .works-hero {
+    height:860px;
+  }
+
+  .works-hero-eyebrow {
+    left:20px;
+    top:88px;
+  }
+
+  .works-hero h1 {
+    left:20px;
+    top:126px;
+    width:350px;
+    font-size:52px;
+    line-height:.9;
+  }
+
+  .works-hero-image {
+    left:20px;
+    top:318px;
+    width:350px;
+    height:380px;
+  }
+
+  .works-hero-copy {
+    left:20px;
+    top:724px;
+    width:345px;
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .works-hero-meta {
+    display:none;
+  }
+
+  .works-index {
+    height:650px;
+  }
+
+  .works-index>.eyebrow {
+    left:20px;
+    top:38px;
+  }
+
+  .works-index h2 {
+    left:20px;
+    top:80px;
+    width:350px;
+    font-size:43px;
+    line-height:.94;
+  }
+
+  .works-index-list {
+    left:20px;
+    right:20px;
+    top:278px;
+    width:auto;
+  }
+
+  .works-index-list p {
+    min-height:76px;
+    grid-template-columns:34px 104px 1fr;
+    font-size:11px;
+  }
+
+  .works-index-list strong {
+    font-size:12px;
+  }
+
+  .works-study {
+    height:820px;
+  }
+
+  .works-study-one .works-study-image {
+    left:20px;
+    top:20px;
+    width:350px;
+    height:360px;
+  }
+
+  .works-study-one .works-study-label {
+    left:20px;
+    top:420px;
+  }
+
+  .works-study-one h2 {
+    left:20px;
+    top:458px;
+    width:350px;
+    font-size:44px;
+    line-height:.93;
+  }
+
+  .works-study-one .works-study-copy {
+    left:20px;
+    top:572px;
+    width:345px;
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .works-study-data {
+    left:20px;
+    top:674px;
+    width:350px;
+  }
+
+  .works-study-data div {
+    min-height:42px;
+    grid-template-columns:102px 1fr;
+  }
+
+  .works-study-data dt {
+    font-size:8px;
+  }
+
+  .works-study-data dd {
+    font-size:11px;
+  }
+
+  .works-study-two {
+    height:810px;
+  }
+
+  .works-study-two .works-study-label {
+    left:20px;
+    top:38px;
+  }
+
+  .works-study-two h2 {
+    left:20px;
+    top:78px;
+    width:350px;
+    font-size:44px;
+    line-height:.93;
+  }
+
+  .works-study-two .works-study-copy {
+    left:20px;
+    top:206px;
+    width:345px;
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .works-study-two .works-study-image {
+    left:20px;
+    top:342px;
+    width:350px;
+    height:400px;
+  }
+
+  .works-study-note {
+    left:20px;
+    bottom:22px;
+    width:330px;
+    font-size:8px;
+  }
+
+  .works-principles {
+    height:930px;
+  }
+
+  .works-principles>.eyebrow {
+    left:20px;
+    top:38px;
+  }
+
+  .works-principles h2 {
+    left:20px;
+    top:80px;
+    width:350px;
+    font-size:44px;
+    line-height:.93;
+  }
+
+  .works-principles-grid {
+    left:20px;
+    right:20px;
+    bottom:36px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  .works-principles-grid article {
+    min-height:200px;
+    padding:20px;
+  }
+
+  .works-principles-grid h3 {
+    margin-top:34px;
+    font-size:18px;
+  }
+
+  .works-principles-grid p {
+    left:20px;
+    right:20px;
+    bottom:20px;
+    font-size:13px;
+  }
+
+  .works-final {
+    height:590px;
+  }
+
+  .works-final>.eyebrow {
+    left:20px;
+    top:38px;
+  }
+
+  .works-final h2 {
+    left:20px;
+    top:82px;
+    width:350px;
+    font-size:44px;
+    line-height:.91;
+  }
+
+  .works-final-copy {
+    left:20px;
+    top:284px;
+    width:340px;
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .works-final-actions {
+    left:20px;
+    top:392px;
+    display:grid;
+    gap:12px;
+  }
+
+  .works-final-primary,
+  .works-final-secondary {
+    width:350px;
+    height:52px;
+    font-size:9px;
+  }
+
+  .works-footer {
+    left:20px;
+    right:20px;
+    bottom:24px;
+    font-size:8px;
+  }
+
+  .works-footer a:not(:first-child) {
+    display:none;
+  }
+}
+
+@media (max-width:389px) {
+  .works-hero-image,
+  .works-study-one .works-study-image,
+  .works-study-two .works-study-image,
+  .works-final-primary,
+  .works-final-secondary {
+    width:calc(100vw - 40px);
+  }
+
+  .works-hero h1,
+  .works-hero-copy,
+  .works-index h2,
+  .works-study-one h2,
+  .works-study-one .works-study-copy,
+  .works-study-two h2,
+  .works-study-two .works-study-copy,
+  .works-principles h2,
+  .works-final h2,
+  .works-final-copy {
+    max-width:calc(100vw - 40px);
+  }
+}
