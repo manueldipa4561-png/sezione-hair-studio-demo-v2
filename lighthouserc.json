@@ -5,7 +5,8 @@
       "startServerReadyPattern": "Serving HTTP",
       "url": [
         "http://127.0.0.1:4173/",
-        "http://127.0.0.1:4173/servizi.html"
+        "http://127.0.0.1:4173/servizi.html",
+        "http://127.0.0.1:4173/lavori.html"
       ],
       "numberOfRuns": 1,
       "settings": {
